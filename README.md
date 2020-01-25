@@ -6,7 +6,8 @@ At first You need to register My Plugins. And Then Add components and Define Rou
 
 ### `nuxt.config.js`
 
-Register Our Custom Navigator Plugins
+Register Our Custom Navigator Plugins,
+**Don'tForgetToAddBuildModulesTo(vuetify)**
 
 ```javascript
 {
@@ -15,6 +16,12 @@ Register Our Custom Navigator Plugins
   */
   plugins: [
     '~/plugins/customNavigatorPlugin.js'
+  ],
+  /*
+  ** Nuxt.js dev-modules
+  */
+  buildModules: [
+    '@nuxtjs/vuetify',
   ],
 }
 ```
