@@ -1,6 +1,12 @@
 # Nuxt Vuetify Navigation
 
+## Setup
+
+At first You need to register My Plugins. And Then Add components and Define Route File in Config folder.
+
 ### `nuxt.config.js`
+
+Register Our Custom Navigator Plugins
 
 ```javascript
 {
@@ -12,7 +18,6 @@
   ],
 }
 ```
-
 
 In Config Routes, We need to define Role Permission And Routers
 
@@ -69,6 +74,8 @@ export const masterLayoutRoute = [
 
 ```
 
+
+### `Folder Structure`
     .
     ├── ...
     ├── components                             
