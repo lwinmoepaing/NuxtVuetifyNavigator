@@ -1,3 +1,27 @@
+/**
+ * All Role And Permision
+ */
+
+export const rolePermission = {
+  Admin: [
+    'Welcome',
+    'Inspire',
+    'Table',
+    'User List',
+    'User Create',
+    'User Role',
+  ],
+  Staff: [
+    'Welcome',
+    'Inspire'
+  ]
+}
+
+/**
+ * Need To Define All Route Here
+ * @desc: Navigator For Left Side Bar
+ */
+
 export const masterLayoutRoute = [
   {
     icon: 'mdi-apps',
@@ -35,5 +59,5 @@ export const masterLayoutRoute = [
         icon: 'mdi-account-alert'
       },
     ]
-},
+  },
 ]

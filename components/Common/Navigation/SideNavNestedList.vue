@@ -1,8 +1,8 @@
 <template>
   <v-list-group
     :prepend-icon="link.icon"
-    value="true"
     :color="color"
+    value="true"
   >
     <template v-slot:activator>
       <v-list-item-content>
@@ -12,7 +12,7 @@
 
     <v-list-item
       v-for="(sublink, index) in link.subLinks"
-      :to="sublink.to"
+      :to="pathTo(sublink.to)"
       :key="index"
       router
       exact
@@ -31,6 +31,12 @@
 
 <script>
 export default {
+  methods: {
+    // If don't hv Locale Path Method For Language Switcher
+    pathTo(link) {
+      return this.localePath ? this.localePath(link) : link;
+    }
+  },
   props: {
     link: {
       type: Object,

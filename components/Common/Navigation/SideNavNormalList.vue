@@ -1,6 +1,6 @@
 <template>
   <v-list-item
-    :to="link.to"
+    :to="pathTo(link.to)"
     :color="color"
     router
     exact
@@ -16,6 +16,12 @@
 
 <script>
 export default {
+  methods: {
+    // If don't hv Locale Path Method For Language Switcher
+    pathTo(link) {
+      return this.localePath ? this.localePath(link) : link;
+    }
+  },
   props: {
     link: {
       type: Object,

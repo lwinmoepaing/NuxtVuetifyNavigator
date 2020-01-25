@@ -14,9 +14,9 @@
       <v-icon>mdi-application</v-icon>
     </v-btn>
 
-    <v-btn icon @click.stop="$emit('fixedToggle')" >
+    <!-- <v-btn icon @click.stop="$emit('fixedToggle')" >
       <v-icon>mdi-minus</v-icon>
-    </v-btn>
+    </v-btn> -->
 
     <v-toolbar-title v-text="title" />
 
