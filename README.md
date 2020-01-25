@@ -1,35 +1,23 @@
-## Nuxt Vuetify Navigation
+# Nuxt Vuetify Navigation
 
-    .
-    ├── ...
-    ├── components                             
-    │   ├── Common  
-    │   │   ├── Navigation 
-    │   │   │   ├── AppBar.vue
-    │   │   │   ├── LeftDrawer.vue
-    │   │   │   ├── RightNavigationDrawer.vue
-    │   │   │   ├── SideNavItems.vue
-    │   │   │   ├── SideNavNestedList.vue
-    │   │   │   └── SideNavNormalList.vue
-    │   │   └── ...                     
-    │   │   
-    ├── configs
-    │   ├── ...
-    │   └── routes.js
-    ├── layouts
-    │   ├── ...
-    │   └── default.js
-    ├── plugins
-    │   ├── ...
-    │   └── customNavigatorPlugin.js
-    ├── ...
-    └── nuxt.config.js
+### `nuxt.config.js`
 
-### `configs/routes.js`
+```javascript
+{
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    '~/plugins/customNavigatorPlugin.js'
+  ],
+}
+```
+
 
 In Config Routes, We need to define Role Permission And Routers
 
 coz of Hiding or Showing Each Side Links
+### `configs/routes.js`
 
 ```javascript
 
@@ -81,18 +69,30 @@ export const masterLayoutRoute = [
 
 ```
 
-### `nuxt.config.js`
-
-```javascript
-{
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-    '~/plugins/customNavigatorPlugin.js'
-  ],
-}
-```
+    .
+    ├── ...
+    ├── components                             
+    │   ├── Common  
+    │   │   ├── Navigation 
+    │   │   │   ├── AppBar.vue
+    │   │   │   ├── LeftDrawer.vue
+    │   │   │   ├── RightNavigationDrawer.vue
+    │   │   │   ├── SideNavItems.vue
+    │   │   │   ├── SideNavNestedList.vue
+    │   │   │   └── SideNavNormalList.vue
+    │   │   └── ...                     
+    │   │   
+    ├── configs
+    │   ├── ...
+    │   └── routes.js
+    ├── layouts
+    │   ├── ...
+    │   └── default.js
+    ├── plugins
+    │   ├── ...
+    │   └── customNavigatorPlugin.js
+    ├── ...
+    └── nuxt.config.js
 
 
 
