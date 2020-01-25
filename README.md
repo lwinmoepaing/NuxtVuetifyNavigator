@@ -109,7 +109,7 @@ export default {
 
 ### `Folder Structure`
 
-Be Careful to right directory. 
+Be Careful to copy right directory. 
 
     .
     ├── ...
