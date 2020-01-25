@@ -19,11 +19,11 @@ Register Our Custom Navigator Plugins
 }
 ```
 
+
+### `configs/routes.js`
 In Config Routes, We need to define Role Permission And Routers
 
 coz of Hiding or Showing Each Side Links
-### `configs/routes.js`
-
 ```javascript
 
 /**
