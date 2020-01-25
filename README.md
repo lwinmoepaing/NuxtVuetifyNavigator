@@ -1,6 +1,12 @@
 ## Nuxt Vuetify Navigation
 
+### `configs/routes.js`
+
+In Config Routes, We need to define Role Permission
+Coz of Hiding or Showing Each Side Links
+
 ```javascript
+
 /**
  * All Role And Permision
  */
@@ -48,3 +54,5 @@ export const masterLayoutRoute = [
 ]
 
 ```
+
+
