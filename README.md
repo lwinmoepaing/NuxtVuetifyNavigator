@@ -1,29 +1,29 @@
 ## Nuxt Vuetify Navigation
 
-.
-├── ...
-├── components                             
-│   ├── Common  
-│   │   ├── Navigation 
-│   │   │   ├── AppBar.vue
-│   │   │   ├── LeftDrawer.vue
-│   │   │   ├── RightNavigationDrawer.vue
-│   │   │   ├── SideNavItems.vue
-│   │   │   ├── SideNavNestedList.vue
-│   │   │   └──  SideNavNormalList.vue
-│   │   └── ...                     
-│   │   
-├── configs
-│   ├── ...
-│   └── routes.js
-├── layouts
-│   ├── ...
-│   └── default.js
-├── plugins
-│   ├── ...
-│   └── customNavigatorPlugin.js
-├── ...
-└── nuxt.config.js
+    .
+    ├── ...
+    ├── components                             
+    │   ├── Common  
+    │   │   ├── Navigation 
+    │   │   │   ├── AppBar.vue
+    │   │   │   ├── LeftDrawer.vue
+    │   │   │   ├── RightNavigationDrawer.vue
+    │   │   │   ├── SideNavItems.vue
+    │   │   │   ├── SideNavNestedList.vue
+    │   │   │   └──  SideNavNormalList.vue
+    │   │   └── ...                     
+    │   │   
+    ├── configs
+    │   ├── ...
+    │   └── routes.js
+    ├── layouts
+    │   ├── ...
+    │   └── default.js
+    ├── plugins
+    │   ├── ...
+    │   └── customNavigatorPlugin.js
+    ├── ...
+    └── nuxt.config.js
 
 ### `configs/routes.js`
 
