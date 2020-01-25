@@ -47,7 +47,6 @@ export const rolePermission = {
   ],
   Staff: [
     'Home',
-    'Inspire'
   ]
 }
 
