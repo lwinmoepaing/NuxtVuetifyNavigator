@@ -1,8 +1,8 @@
 <template>
-  <v-app dark>
+  <v-app>
     <LeftDrawer
       :drawer="drawer"
-      :items="items"
+      :items="getRoutesByRole"
       :miniVariant="miniVariant"
       :clipped="clipped"
       :fixed="fixed"
@@ -20,11 +20,13 @@
       @rightDrawerToggle="rightDrawer = !rightDrawer"
     />
 
+    <!-- Layout Content Start -->
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
+    <!-- Layout Content End -->
 
     <RightNavigationDrawer
       :fixed="fixed"
@@ -44,18 +46,28 @@ import RightNavigationDrawer from '~/components/Common/Navigation/RightNavigatio
 import Footer from '~/components/Common/Footer'
 
 // Import Drawer Route List
-import { masterLayoutRoute } from '~/configs/DrawerRouteList'
+import { masterLayoutRoute } from '~/configs/routes'
 
 export default {
   data () {
     return {
-      clipped: false,
+      clipped: true,
       drawer: true,
       fixed: false,
       items: masterLayoutRoute,
       miniVariant: false,
       rightDrawer: false,
-      title: 'Master'
+      title: 'Master',
+      user: {
+        name: 'Something',
+        role: 'Admin'
+      }
+    }
+  },
+  computed: {
+    getRoutesByRole() {
+      // Injection Method From Navigator Plugins
+      return this.GET_ROUTE_BY_ROLE(this.user.role)
     }
   },
   methods: {

@@ -74,8 +74,34 @@ export const masterLayoutRoute = [
 
 ```
 
+### `laytouts/default.js`
+
+You Can Changes Role From Your **Vuex** Store `user:{ role: 'User' }` below Example.
+
+```javascript
+export default {
+  data () {
+    return {
+      //...
+      title: 'Master',
+      user: {
+        name: 'Something',
+        role: 'Admin' // Or User, Guest
+      }
+    }
+  },
+  computed: {
+    getRoutesByRole() {
+      // Injection Method From Navigator Plugins
+      return this.GET_ROUTE_BY_ROLE(this.user.role)
+    }
+  },
+}
+```
 
 ### `Folder Structure`
+
+Be Careful to right directory. 
     .
     ├── ...
     ├── components                             
