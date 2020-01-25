@@ -1,5 +1,7 @@
 # Nuxt Vuetify Navigation
 
+![Navigator Demo](https://media.giphy.com/media/d9a5jria1qYDdIe4Mf/giphy.gif)
+
 ## Setup
 
 At first You need to register My Plugins. And Then Add components and Define Route File in Config folder.
