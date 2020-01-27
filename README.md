@@ -1,6 +1,7 @@
 # Nuxt Vuetify Navigation
-
-![Navigator Demo](https://github.com/lwinmoepaing/NuxtVuetifyNavigator/blob/master/sample.gif)
+<p align="center"> 
+  ![Navigator Demo](https://github.com/lwinmoepaing/NuxtVuetifyNavigator/blob/master/sample.gif)
+</p>
 
 ## Setup
 
