@@ -1,6 +1,6 @@
 # Nuxt Vuetify Navigation
 
-![Navigator Demo](https://media.giphy.com/media/d9a5jria1qYDdIe4Mf/giphy.gif)
+![Navigator Demo](https://github.com/lwinmoepaing/NuxtVuetifyNavigator/blob/master/sample.gif)
 
 ## Setup
 
